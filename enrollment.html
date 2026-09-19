@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Online enrollment for Max SpotLight Atelier dance programs in Pune.">
+<meta name="theme-color" content="#fbf8f3">
+<title>Online Enrollment | Max SpotLight Atelier</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Max SpotLight Atelier home">
+      <span class="brand-mark">M</span>
+      <span>MAX SpotLight Atelier<small>FOR THE CREATORS · BY THE CREATORS</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="programs.html">Programs</a>
+      <a href="workshops.html">Workshops</a>
+      <a href="studio.html">The Studio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-primary btn-small" href="enrollment.html">Enroll Now ↗</a>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+  <nav class="mobile-menu" aria-label="Mobile navigation">
+    <a href="index.html">Home</a><a href="programs.html">Programs</a><a href="workshops.html">Workshops</a><a href="studio.html">The Studio</a><a href="contact.html">Contact</a>
+    <a class="btn btn-primary" href="enrollment.html">Start Enrollment ↗</a>
+  </nav>
+</header>
+
+<main>
+<section class="page-hero">
+ <div class="container reveal"><span class="eyebrow">Online enrollment</span><h1 class="display">Choose your room.<br><em>Reserve your rhythm.</em></h1><p class="lede">A guided three-step enrollment flow for programs at Max SpotLight Atelier. Submit your details and receive a reference number for confirmation.</p></div>
+</section>
+<section class="section-tight">
+<div class="container enroll-layout">
+ <form class="form-card reveal" id="enrollmentForm">
+   <div class="steps"><div class="step active">01 · Program</div><div class="step">02 · Student</div><div class="step">03 · Review</div></div>
+   <div class="form-step active">
+     <h2>Pick your program</h2><p class="muted">Choose the format that best matches your goal. Our team can adjust the batch after submission if needed.</p>
+     <div class="choice-grid">
+       <div class="choice"><input required type="radio" id="p1" name="program" value="Contemporary & Movement" data-price="2400"><label for="p1"><strong>Contemporary & Movement</strong><span>₹2,400 / month · All levels</span></label></div>
+       <div class="choice"><input required type="radio" id="p2" name="program" value="Urban & Dancehall" data-price="2800"><label for="p2"><strong>Urban & Dancehall</strong><span>₹2,800 / month · 16+</span></label></div>
+       <div class="choice"><input required type="radio" id="p3" name="program" value="Indian Classical" data-price="2200"><label for="p3"><strong>Indian Classical</strong><span>₹2,200 / month · 8+</span></label></div>
+       <div class="choice"><input required type="radio" id="p4" name="program" value="Core + Dance Conditioning" data-price="2400"><label for="p4"><strong>Core + Dance Conditioning</strong><span>₹2,400 / month · All levels</span></label></div>
+     </div>
+     <div style="height:18px"></div>
+     <div class="field"><label for="batch">Preferred batch</label><select id="batch" name="batch" required><option value="">Select a preferred time</option><option>Weekday Morning · 8:00 AM</option><option>Weekday Evening · 6:00 PM</option><option>Weekday Evening · 7:30 PM</option><option>Saturday · 11:00 AM</option><option>Saturday · 5:00 PM</option></select></div>
+   </div>
+   <div class="form-step">
+     <h2>Tell us about the student</h2><p class="muted">These details help the team recommend the right pace and batch.</p>
+     <div class="form-grid">
+       <div class="field"><label for="studentName">Full name *</label><input id="studentName" name="studentName" required placeholder="Your full name"></div>
+       <div class="field"><label for="age">Age *</label><input id="age" name="age" required type="number" min="4" max="80" placeholder="e.g. 20"></div>
+       <div class="field"><label for="phone">WhatsApp number *</label><input id="phone" name="phone" required type="tel" placeholder="+91 98xxxxxx"></div>
+       <div class="field"><label for="email">Email *</label><input id="email" name="email" required type="email" placeholder="you@example.com"></div>
+       <div class="field"><label for="experience">Experience</label><select id="experience" name="experience"><option>Complete beginner</option><option>Some experience</option><option>Intermediate</option><option>Advanced / performer</option></select></div>
+       <div class="field"><label for="goal">Primary goal</label><select id="goal" name="goal"><option>Fitness & movement</option><option>Learn choreography</option><option>Performance</option><option>Classical training</option><option>Confidence & expression</option></select></div>
+       <div class="field full"><label for="notes">Anything we should know?</label><textarea id="notes" name="notes" rows="4" placeholder="Preferred style, accessibility request, previous training, etc."></textarea></div>
+     </div>
+   </div>
+   <div class="form-step">
+     <h2>Review & submit</h2><p class="muted">Your enrollment request is ready. A reference is generated for this demo flow; the studio team can confirm availability and payment separately.</p>
+     <div class="card" style="padding:18px;background:#fcfaf6;margin:18px 0">
+       <p><strong>Enrollment request</strong></p>
+       <p class="muted">Selected program and batch are shown in the summary beside this form. Please verify your WhatsApp number and email before submitting.</p>
+     </div>
+     <label style="display:flex;gap:10px;align-items:flex-start;font-size:.8rem"><input id="terms" type="checkbox"> I confirm that the information provided is accurate and I agree to the studio's enrollment policies.</label>
+   </div>
+   <div class="form-actions"><button type="button" class="btn btn-soft" id="backStep">Back</button><button type="button" class="btn btn-primary" id="nextStep">Continue</button></div>
+ </form>
+ <aside class="summary reveal">
+   <span class="eyebrow">Your request</span><h3>Enrollment<br>summary</h3>
+   <div class="summary-line"><span>Student</span><strong id="summaryName">Your name</strong></div>
+   <div class="summary-line"><span>Program</span><strong id="summaryProgram">Not selected</strong></div>
+   <div class="summary-line"><span>Batch</span><strong id="summaryBatch">Not selected</strong></div>
+   <div class="summary-line summary-total"><span>Indicative fee</span><strong id="summaryAmount">—</strong></div>
+   <div class="notice">No payment is taken on this demo page. After submission, the studio can confirm your seat and share the official payment / invoice instructions.</div>
+   <p style="font-size:.72rem;color:#bdb3a8;margin-top:20px">Need help now? <a style="text-decoration:underline" href="https://wa.me/919960628820" target="_blank" rel="noopener">WhatsApp the Atelier ↗</a></p>
+ </aside>
+</div>
+</section>
+</main>
+<div class="modal" id="successModal">
+ <div class="modal-card">
+  <button class="modal-close" data-close-modal>×</button>
+  <span class="eyebrow">Request received</span><h2>You’re on the list.</h2>
+  <p class="lede">Your demo enrollment request has been saved on this device. Reference: <strong id="successRef"></strong></p>
+  <p>For real deployment, connect this form to the studio's CRM / email / database and add a verified payment gateway before going live.</p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-primary" href="https://wa.me/919960628820" target="_blank" rel="noopener">Continue on WhatsApp ↗</a><button class="btn btn-soft modal-close" data-close-modal>Close</button></div>
+ </div>
+</div>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">MAX SpotLight</div>
+      <p>Movement, music and creative expression in the heart of Kalyani Nagar, Pune.</p>
+      <p>For the Creators, By the Creators.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <p><a href="programs.html">Programs</a></p>
+      <p><a href="workshops.html">Workshops</a></p>
+      <p><a href="studio.html">The Studio</a></p>
+      <p><a href="enrollment.html">Enrollment</a></p>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <p><a href="https://www.instagram.com/maxspotlightatelier/" target="_blank" rel="noopener">Instagram ↗</a></p>
+      <p><a href="https://wa.me/919960628820" target="_blank" rel="noopener">WhatsApp ↗</a></p>
+      <p><a href="mailto:dance@maxspotlight.in">dance@maxspotlight.in</a></p>
+      <p><a href="https://maxspotlight.com/" target="_blank" rel="noopener">Existing website ↗</a></p>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <p>1st Floor, Solitaire Business Hub,<br>104 West Ave, Kalyani Nagar,<br>Pune, Maharashtra 411006</p>
+      <p>Daily · 7:00 AM — 10:00 PM</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Max SpotLight Atelier. All rights reserved.</span>
+    <span>Premium studio website concept · Front-end enrollment demo</span>
+  </div>
+</footer>
+<script src="script.js"></script>
