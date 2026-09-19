@@ -1,0 +1,40 @@
+MAX SPOTLIGHT ATELIER — MEDIA MAP
+=====================================
+
+All supplied media lives in this ONE folder: /assets/
+Do not create additional image/media folders.
+
+IMAGES
+------
+hero-contemporary.jpg     <- 1407443630912668.jfif
+dancehall-reel.jpg        <- #dance #danse #dancehall.jfif
+movement-portrait.jpg     <- 1125968743339636.jfif
+performance-editorial.jpg <- 299348706505631968.jfif
+aerial-silks.jpg          <- Split - Aerial Silks.jfif
+rehearsal-portrait.jpg    <- Rebeca Suárez.jfif
+core-dance.jpg            <- 10-Min Core Dance Routine with Trina — Strength That Shows.jfif
+bharatanatyam.jpg         <- Grace of Bharatanatyam.jfif
+kathak.jpg                <- Kathak Dancer Wearing Our Traditional Attire.jfif
+dance-fashion.jpg         <- 1048283250785179644.jfif
+dance-photo.jpg           <- by _@nikitah_photo on instagram.jfif
+group-class.jpg           <- dance class.jfif
+studio-community.jpg      <- танцы.jfif
+studio-space.jpg          <- 💜 Luxury Home Dance Studio Design _ Modern Dance Room.jfif
+
+VIDEOS
+------
+studio-motion-01.mp4      <- 8281161-hd_1920_1080_24fps.mp4
+studio-motion-02.mp4      <- 10273496-uhd_4096_2160_25fps.mp4
+studio-motion-03.mp4      <- 6077219-uhd_4096_2160_25fps.mp4
+studio-motion-04.mp4      <- 10274941-uhd_4096_2160_25fps.mp4
+
+WHERE MEDIA IS USED
+-------------------
+Home: hero-contemporary, movement-portrait, group-class, studio-community, performance-editorial
+Programs: dancehall-reel, core-dance, bharatanatyam, kathak, aerial-silks, dance-fashion
+Workshops: rehearsal-portrait, dance-photo, performance-editorial, studio-motion-02, studio-motion-03
+Studio: studio-space, studio-community, group-class, all four motion videos
+Enrollment: group-class + studio-space
+Contact: dance-photo + studio-space
+
+If replacing an image later, keep the filename stable so the page code does not need edits.
